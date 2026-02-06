@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+    --color-charcoal-brown-50: #f1f4f2;
+    --color-charcoal-brown-100: #e3e8e6;
+    --color-charcoal-brown-200: #c7d1cc;
+    --color-charcoal-brown-300: #abbab3;
+    --color-charcoal-brown-400: #8fa399;
+    --color-charcoal-brown-500: #738c80;
+    --color-charcoal-brown-600: #5c7066;
+    --color-charcoal-brown-700: #45544d;
+    --color-charcoal-brown-800: #2e3833;
+    --color-charcoal-brown-900: #171c1a;
+    --color-charcoal-brown-950: #101412;
+
+    --color-dark-spruce-50: #eef7f1;
+    --color-dark-spruce-100: #ddeee3;
+    --color-dark-spruce-200: #bbddc8;
+    --color-dark-spruce-300: #98cdac;
+    --color-dark-spruce-400: #76bc91;
+    --color-dark-spruce-500: #54ab75;
+    --color-dark-spruce-600: #43895e;
+    --color-dark-spruce-700: #326746;
+    --color-dark-spruce-800: #22442f;
+    --color-dark-spruce-900: #112217;
+    --color-dark-spruce-950: #0c1810;
+
+    --color-forest-green-50: #e9fcee;
+    --color-forest-green-100: #d2f9de;
+    --color-forest-green-200: #a5f3bc;
+    --color-forest-green-300: #78ed9b;
+    --color-forest-green-400: #4be77a;
+    --color-forest-green-500: #1fe059;
+    --color-forest-green-600: #18b447;
+    --color-forest-green-700: #128735;
+    --color-forest-green-800: #0c5a23;
+    --color-forest-green-900: #062d12;
+    --color-forest-green-950: #041f0c;
+
+    --color-radioactive-grass-50: #e6ffe9;
+    --color-radioactive-grass-100: #cdfed3;
+    --color-radioactive-grass-200: #9bfda8;
+    --color-radioactive-grass-300: #68fd7c;
+    --color-radioactive-grass-400: #36fc50;
+    --color-radioactive-grass-500: #04fb25;
+    --color-radioactive-grass-600: #03c91d;
+    --color-radioactive-grass-700: #029716;
+    --color-radioactive-grass-800: #02640f;
+    --color-radioactive-grass-900: #013207;
+    --color-radioactive-grass-950: #012305;
+
+    --color-spring-green-50: #e5ffef;
+    --color-spring-green-100: #ccffdf;
+    --color-spring-green-200: #99ffbe;
+    --color-spring-green-300: #66ff9e;
+    --color-spring-green-400: #33ff7e;
+    --color-spring-green-500: #00ff5e;
+    --color-spring-green-600: #00cc4b;
+    --color-spring-green-700: #009938;
+    --color-spring-green-800: #006625;
+    --color-spring-green-900: #003313;
+    --color-spring-green-950: #00240d;
+}
