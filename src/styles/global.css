@@ -61,3 +61,84 @@
     --color-spring-green-900: #003313;
     --color-spring-green-950: #00240d;
 }
+
+@layer components {
+    html {
+        background-color: var(--color-charcoal-brown-900);
+        color: var(--color-radioactive-grass-50);
+        font-family: sans-serif;
+    }
+
+    body {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 80ch;
+        padding: 1rem;
+        line-height: 1.5;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    h1 {
+        margin: 1rem 0;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: underline;
+        color: var(--color-spring-green-600);
+    }
+
+    nav-links {
+        width: 100%;
+        display: none;
+        margin: auto;
+    }
+
+    .nav-links a {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus {
+        background-color: var(--color-charcoal-brown-700);
+    }
+
+    @media screen and (min-width: 636px) {
+        .nav-links {
+            margin-left: 5em;
+            display: block;
+            position: static;
+            width: auto;
+            background: none;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            padding: 20px 20px;
+        }
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tag {
+        margin: 0.25em;
+        border: solid 1px var(--color-spring-green-500);
+        border-radius: .5em;
+        padding: .25em 0.5em;
+        font-size: 1.15em;
+        background-color: var(--color-charcoal-brown-700);
+    }
+}

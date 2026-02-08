@@ -1,15 +1,15 @@
-function setCookieWithExp(cname, cvalue, exdays) {
+function setCookieWithExp(cname: string, cvalue: string, exdays: number) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     let expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-function setCookie(cname, cvalue) {
+function setCookie(cname: string, cvalue: string) {
     document.cookie = cname + "=" + cvalue;
 }
 
-function getCookie(cname) {
+function getCookie(cname: string) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
@@ -40,23 +40,27 @@ export function updateVisitedCookie() {
         return
     }
 
-    var timesVisitedint = +timesVisited;
-    setCookie("timesVisited", timesVisitedint + 1)
+    let timesVisitedint: number = +timesVisited;
+    setCookie("timesVisited", (timesVisitedint + 1).toString())
 }
 
 export function setCookieId() {
-let visitedCount = getCookie("timesVisited");
-var cookieString = "You've been here ";
-if (visitedCount == 1) {
-    cookieString += "once!<br>You should come by more often!"
-} else {
-    cookieString += visitedCount + " times!";
-    if (visitedCount >= 1000) {
-        cookieString += "<br>What are you some kind of stalker~"
-    } else if (visitedCount >= 100) {
-        cookieString += "<br>Can't get enough of me can you?"
+    let visitedCount = parseInt(getCookie("timesVisited"));
+    var cookieString = "You've been here ";
+    if (visitedCount == 1) {
+        cookieString += "once!<br>You should come by more often!"
+    } else {
+        cookieString += visitedCount + " times!";
+        if (visitedCount >= 1000) {
+            cookieString += "<br>What are you some kind of stalker~"
+        } else if (visitedCount >= 100) {
+            cookieString += "<br>Can't get enough of me can you?"
+        }
     }
-}
 
-document.getElementById("cookie").innerHTML = cookieString;
+    let element = document.getElementById("cookie");
+
+    if (element != null) {
+        element.innerHTML = cookieString;
+    }
 }

@@ -1,27 +1,19 @@
 ---
-import "../styles/global.css";
-import "../scripts/visited.js";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Visited from "../components/Visited.svelte";
+
+const pageTitle = "Homepage";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Hey, I'm Tax!</title>
-	</head>
-	<body class="bg-charcoal-brown-900 text-radioactive-grass-50">
-		<h1 class="text-3xl font-bold underline">Hey, I'm Tax!</h1>
-		<p>Im a developer, gamer, and a bunch of other stuff depending on how bored I get.</p>
-  	<p>This website is still heavily under development due to me getting bored and/or forgetting about it</p>
-  	<p id="cookie"></p>
-
-		<script>
-			import { updateVisitedCookie, setCookieId } from "../scripts/visited.js";
-			updateVisitedCookie();
-			setCookieId();
-		</script>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<h1 class="font-bold underline">Hey, I'm Tax!</h1>
+	<p>
+		Im a developer, gamer, and a bunch of other stuff depending on how bored
+		I get.
+	</p>
+	<p>
+		This website is still heavily under development due to me getting bored
+		and/or forgetting about it
+	</p>
+	<Visited client:load />
+</BaseLayout>

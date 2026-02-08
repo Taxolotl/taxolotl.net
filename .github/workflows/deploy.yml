@@ -32,7 +32,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install deps
-        run: npm install astro tailwindcss @tailwindcss/vite
+        run: npm install astro @astrojs/rss tailwindcss @tailwindcss/vite svelte @astrojs/svelte typescript
 
       # Builds the website into ./dist/
       - name: Build
