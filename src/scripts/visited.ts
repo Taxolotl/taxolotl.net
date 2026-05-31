@@ -48,9 +48,9 @@ export function setCookieId() {
     let visitedCount = parseInt(getCookie("timesVisited"));
     var cookieString = "You've been here ";
     if (visitedCount == 1) {
-        cookieString += "once!<br>You should come by more often!"
+        cookieString += "once!<br>You should come by more often!🍪"
     } else {
-        cookieString += visitedCount + " times!";
+        cookieString += visitedCount + " times!🍪";
         if (visitedCount >= 1000) {
             cookieString += "<br>What are you some kind of stalker~"
         } else if (visitedCount >= 100) {
